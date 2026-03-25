@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maya Atelier</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-frame">
+      <header class="topbar">
+        <a class="brand" href="#home">Maya Atelier</a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#new">New In</a>
+          <a href="#collections">Collections</a>
+          <a href="#featured">Featured</a>
+          <a href="#journal">Journal</a>
+        </nav>
+
+        <div class="topbar-tools">
+          <label class="search-shell" for="site-search">
+            <span class="sr-only">Search products</span>
+            <input id="site-search" type="search" placeholder="Search silhouettes, dresses, knitwear..." />
+          </label>
+          <button class="icon-button" type="button" aria-label="Account">
+            <svg class="top-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 12.2a4.1 4.1 0 1 0 0-8.2 4.1 4.1 0 0 0 0 8.2Zm0 2.2c-4.2 0-7.6 2.3-7.6 5.1 0 .3.2.5.5.5h14.2c.3 0 .5-.2.5-.5 0-2.8-3.4-5.1-7.6-5.1Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button id="cart-toggle" class="icon-button cart-button" type="button" aria-label="Shopping cart">
+            <svg class="top-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8.2 9.2V7.8a3.8 3.8 0 1 1 7.6 0v1.4h1.1c.5 0 .9.4.9.9l-.8 8.4c-.1.5-.5.9-1 .9H8c-.5 0-.9-.4-1-.9l-.8-8.4c0-.5.4-.9.9-.9h1.1Zm1.6 0h4.4V7.8a2.2 2.2 0 1 0-4.4 0v1.4Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.7"
+              />
+            </svg>
+            <span id="cart-count" class="cart-count">0</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section id="home" class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Spring 2026</p>
+            <h1>Styled by Maya.</h1>
+            <p>
+              Discover elevated essentials, refined tailoring, and seasonal pieces curated with personal styling,
+              size guidance, shipping help, and gifting support.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button-primary" href="#featured">Shop The Edit</a>
+              <button class="button-secondary" type="button" data-open-chat="true">Ask Maya</button>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-card hero-card-top">
+              <span class="hero-kicker">Curated Note</span>
+              <p>Weightless layers, warm neutrals, and crisp accessories designed for quiet standout dressing.</p>
+            </div>
+
+            <div class="hero-image">
+              <div class="hero-orb hero-orb-left"></div>
+              <div class="hero-orb hero-orb-right"></div>
+              <img
+                class="hero-model"
+                src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80"
+                alt="Black fashion model wearing a soft neutral outfit"
+              />
+            </div>
+
+            <div class="hero-card hero-card-bottom">
+              <span class="hero-kicker">Maya Recommends</span>
+              <p>Start with the linen trench, then layer the moonstone slip for evening.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="new" class="promo-strip">
+          <article>
+            <p class="promo-label">Shipping</p>
+            <h2>Free delivery on orders over $150</h2>
+          </article>
+          <article>
+            <p class="promo-label">Returns</p>
+            <h2>Returns accepted within 14 days</h2>
+          </article>
+          <article>
+            <p class="promo-label">Styling</p>
+            <h2>Personal styling with Maya</h2>
+          </article>
+        </section>
+
+        <section id="collections" class="collection-grid">
+          <article class="collection-card sand">
+            <img
+              class="collection-image"
+              src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80"
+              alt="Woman in light neutral tailoring"
+            />
+            <p class="card-tag">Resort</p>
+            <h2>Tailored layers for warm days.</h2>
+            <p>Light suiting, fluid separates, and polished accessories for everyday dressing.</p>
+          </article>
+          <article class="collection-card blush">
+            <img
+              class="collection-image"
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+              alt="Black woman in elegant occasionwear"
+            />
+            <p class="card-tag">Occasion</p>
+            <h2>Evening pieces with a softer line.</h2>
+            <p>Refined dresses and understated details for events, dinners, and celebrations.</p>
+          </article>
+          <article class="collection-card ink">
+            <img
+              class="collection-image"
+              src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80"
+              alt="Minimal fashion essentials on a dark backdrop"
+            />
+            <p class="card-tag">Essentials</p>
+            <h2>Daily staples in a quiet palette.</h2>
+            <p>Clean knits, sharp trousers, and versatile bags designed to wear on repeat.</p>
+          </article>
+        </section>
+
+        <section id="featured" class="featured-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">New Arrivals</p>
+              <h2>New arrivals.</h2>
+            </div>
+            <a href="#journal">Shop more</a>
+          </div>
+
+          <div id="featured-grid" class="product-grid">
+            <article class="product-card" data-product-name="Moonstone Slip Dress" data-product-price="148">
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=900&q=80"
+                alt="Black woman wearing a soft satin dress"
+              />
+              <h3>Moonstone Slip Dress</h3>
+              <p>Soft sheen, bias cut, evening-ready.</p>
+              <span>$148</span>
+              <button class="product-action" type="button" data-add-product="Moonstone Slip Dress">Add to bag</button>
+            </article>
+            <article class="product-card" data-product-name="Contour Linen Blazer" data-product-price="176">
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80"
+                alt="Lightweight linen blazer"
+              />
+              <h3>Contour Linen Blazer</h3>
+              <p>Breathable tailoring in oat and ivory.</p>
+              <span>$176</span>
+              <button class="product-action" type="button" data-add-product="Contour Linen Blazer">Add to bag</button>
+            </article>
+            <article class="product-card" data-product-name="Gallery Shoulder Bag" data-product-price="92">
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80"
+                alt="Structured shoulder bag"
+              />
+              <h3>Gallery Shoulder Bag</h3>
+              <p>Structured daily carry with gold hardware.</p>
+              <span>$92</span>
+              <button class="product-action" type="button" data-add-product="Gallery Shoulder Bag">Add to bag</button>
+            </article>
+            <article class="product-card" data-product-name="Cloud Knit Set" data-product-price="134">
+              <img
+                class="product-image"
+                src="./assets/cloud-knit-set.jpg"
+                alt="Black woman in an editorial knitwear look"
+              />
+              <h3>Cloud Knit Set</h3>
+              <p>Layered comfort with editorial shape.</p>
+              <span>$134</span>
+              <button class="product-action" type="button" data-add-product="Cloud Knit Set">Add to bag</button>
+            </article>
+          </div>
+        </section>
+
+        <section id="journal" class="featured-section more-products-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Explore</p>
+              <h2>Shop.</h2>
+            </div>
+            <a href="#featured">View featured</a>
+          </div>
+
+          <article class="explore-banner">
+            <img
+              class="explore-banner-image"
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1400&q=80"
+              alt="Black woman in an editorial fashion portrait"
+            />
+            <div class="explore-banner-copy">
+              <p class="eyebrow">Editorial Select</p>
+              <h3>Refined pieces for day, evening, and occasion dressing.</h3>
+            </div>
+          </article>
+
+          <div id="more-products-grid" class="product-grid">
+            <article class="product-card" data-product-name="Moonstone Slip Dress" data-product-price="148">
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=900&q=80"
+                alt="Soft satin slip dress"
+              />
+              <h3>Moonstone Slip Dress</h3>
+              <p>Soft sheen, bias cut, evening-ready.</p>
+              <span>$148</span>
+              <button class="product-action" type="button" data-add-product="Moonstone Slip Dress">Add to bag</button>
+            </article>
+            <article class="product-card" data-product-name="Contour Linen Blazer" data-product-price="176">
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80"
+                alt="Lightweight linen blazer"
+              />
+              <h3>Contour Linen Blazer</h3>
+              <p>Breathable tailoring in oat and ivory.</p>
+              <span>$176</span>
+              <button class="product-action" type="button" data-add-product="Contour Linen Blazer">Add to bag</button>
+            </article>
+            <article class="product-card" data-product-name="Gallery Shoulder Bag" data-product-price="92">
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80"
+                alt="Structured shoulder bag"
+              />
+              <h3>Gallery Shoulder Bag</h3>
+              <p>Structured daily carry with gold hardware.</p>
+              <span>$92</span>
+              <button class="product-action" type="button" data-add-product="Gallery Shoulder Bag">Add to bag</button>
+            </article>
+            <article class="product-card" data-product-name="Cloud Knit Set" data-product-price="134">
+              <img
+                class="product-image"
+                src="./assets/cloud-knit-set.jpg"
+                alt="Black woman in an editorial knitwear look"
+              />
+              <h3>Cloud Knit Set</h3>
+              <p>Layered comfort with editorial shape.</p>
+              <span>$134</span>
+              <button class="product-action" type="button" data-add-product="Cloud Knit Set">Add to bag</button>
+            </article>
+            <article class="product-card" data-product-name="Column Trouser" data-product-price="118">
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?auto=format&fit=crop&w=900&q=80"
+                alt="Black woman wearing tailored trousers and a knit top"
+              />
+              <h3>Column Trouser</h3>
+              <p>Relaxed tailoring for work, travel, and evenings.</p>
+              <span>$118</span>
+              <button class="product-action" type="button" data-add-product="Column Trouser">Add to bag</button>
+            </article>
+            <article class="product-card" data-product-name="Studio Trench Coat" data-product-price="214">
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80"
+                alt="Black woman wearing a neutral trench coat"
+              />
+              <h3>Studio Trench Coat</h3>
+              <p>Layered outerwear with a clean, modern drape.</p>
+              <span>$214</span>
+              <button class="product-action" type="button" data-add-product="Studio Trench Coat">Add to bag</button>
+            </article>
+            <article class="product-card" data-product-name="Marble Mini Bag" data-product-price="96">
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80"
+                alt="Black woman carrying a structured cream handbag"
+              />
+              <h3>Marble Mini Bag</h3>
+              <p>Compact structure with polished daytime appeal.</p>
+              <span>$96</span>
+              <button class="product-action" type="button" data-add-product="Marble Mini Bag">Add to bag</button>
+            </article>
+            <article class="product-card" data-product-name="Satin Evening Top" data-product-price="108">
+              <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
+                alt="Black woman wearing a satin evening top"
+              />
+              <h3>Satin Evening Top</h3>
+              <p>Soft structure with a polished finish for evenings out.</p>
+              <span>$108</span>
+              <button class="product-action" type="button" data-add-product="Satin Evening Top">Add to bag</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="promo-columns">
+          <article class="season-banner">
+            <div class="season-copy">
+              <p class="eyebrow">Spring Apparel</p>
+              <h2>Spring essentials.</h2>
+              <p>
+                Fresh neutrals, easy dresses, and refined layers made for the season ahead.
+              </p>
+            </div>
+            <img
+              class="season-image"
+              src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80"
+              alt="Spring fashion apparel styling"
+            />
+          </article>
+
+          <article class="newsletter-section">
+            <div class="newsletter-copy">
+              <p class="eyebrow">Newsletter</p>
+              <h2>Subscribe.</h2>
+              <p>Be first to shop new arrivals, limited drops, and private offers.</p>
+            </div>
+
+            <form class="newsletter-form">
+              <label class="sr-only" for="newsletter-email">Email address</label>
+              <input
+                id="newsletter-email"
+                name="email"
+                type="email"
+                placeholder="Enter your email address"
+                autocomplete="email"
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <p class="footer-label">Maya Atelier</p>
+          <p>Contemporary womenswear shaped by clean lines, soft structure, and modern dressing.</p>
+        </div>
+        <div>
+          <p class="footer-label">Customer Care</p>
+          <p>Shipping, returns, sizing, and order support available every day.</p>
+        </div>
+        <div>
+          <p class="footer-label">Contact</p>
+          <p>hello@mayaatelier.com | +1 (212) 555-0186</p>
+        </div>
+      </footer>
+    </div>
+
+    <aside id="cart-drawer" class="cart-drawer hidden" aria-hidden="true" aria-label="Shopping cart">
+      <div class="cart-drawer-header">
+        <div>
+          <p class="chat-label">Bag</p>
+          <h2>Your cart</h2>
+        </div>
+        <button id="cart-close" class="chat-close" type="button" aria-label="Close cart">x</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <p class="cart-empty">Your bag is empty.</p>
+      </div>
+      <div class="cart-drawer-footer">
+        <div class="cart-total-row">
+          <span>Total</span>
+          <strong id="cart-total">$0</strong>
+        </div>
+        <div class="cart-actions">
+          <button id="cart-clear" class="button-secondary small-button" type="button">Clear bag</button>
+          <button id="cart-checkout" class="button-primary small-button" type="button">Dummy checkout</button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="product-popup" class="product-popup hidden" aria-hidden="true">
+      <div class="product-popup-card">
+        <button id="product-popup-close" class="product-popup-close" type="button" aria-label="Close popup">x</button>
+        <div class="product-popup-media">
+          <img id="product-popup-image" class="product-popup-image" src="" alt="" />
+        </div>
+        <div class="product-popup-content">
+          <p class="eyebrow">Added To Bag</p>
+          <h2 id="product-popup-title">New product</h2>
+          <p id="product-popup-copy">Your item has been added to the store and your bag.</p>
+          <div class="product-popup-slides">
+            <div class="product-popup-slide is-active" data-popup-slide="0">
+              <strong>Store updated</strong>
+              <span>The new product is now live in the catalog.</span>
+            </div>
+            <div class="product-popup-slide" data-popup-slide="1">
+              <strong>Bag updated</strong>
+              <span>The item has been added to your cart automatically.</span>
+            </div>
+            <div class="product-popup-slide" data-popup-slide="2">
+              <strong>Ready to shop</strong>
+              <span>You can continue browsing or check out with Maya.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      id="chat-toggle"
+      class="chat-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="chat-widget"
+    >
+      Chat with Maya
+    </button>
+
+    <aside
+      id="chat-widget"
+      class="chat-widget"
+      aria-label="Maya shopping assistant"
+      aria-hidden="false"
+    >
+      <div class="chat-header">
+        <div>
+          <p class="chat-label">Digital Stylist</p>
+          <h2>Maya</h2>
+        </div>
+        <button id="chat-close" class="chat-close" type="button" aria-label="Close chat">
+          x
+        </button>
+      </div>
+
+      <div class="chat-intro">
+        <p>Maya can help with sizing, styling, delivery, and finding the right pieces.</p>
+        <div class="suggestion-row">
+          <button class="suggestion-chip" type="button" data-prompt="Find me a full outfit under $200">
+            Outfit under $200
+          </button>
+          <button class="suggestion-chip" type="button" data-prompt="What sizes do you have?">
+            Size help
+          </button>
+          <button class="suggestion-chip" type="button" data-prompt="How fast is shipping?">
+            Shipping
+          </button>
+          <button class="suggestion-chip" type="button" data-prompt="Show my cart">
+            Show cart
+          </button>
+        </div>
+      </div>
+
+      <div id="chat-messages" class="chat-messages"></div>
+
+      <form id="chat-form" class="chat-form">
+        <label class="sr-only" for="chat-input">Type your message</label>
+        <input
+          id="chat-input"
+          name="message"
+          type="text"
+          placeholder="Ask Maya about products, delivery, or styling..."
+          autocomplete="off"
+        />
+        <button type="submit">Send</button>
+      </form>
+    </aside>
+
+    <script type="module" src="./dist/chatbot.js"></script>
+  </body>
+</html>
