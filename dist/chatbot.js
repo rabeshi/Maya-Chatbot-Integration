@@ -236,7 +236,7 @@ class MayaAssistant {
       return "Returns are accepted within 14 days in original condition, and exchanges can be arranged through customer care.";
     }
     if (normalized.includes("store") || normalized.includes("about")) {
-      return "Maya Atelier is a contemporary womenswear store focused on refined tailoring, modern essentials, and versatile accessories.";
+      return "Maya Ntuli is a contemporary womenswear store focused on refined tailoring, modern essentials, and versatile accessories.";
     }
     if (normalized.includes("under $200") || normalized.includes("budget") || normalized.includes("under 200")) {
       return "For under $200, I'd pair the Gallery Shoulder Bag with the Quiet Sandal, or suggest the Cloud Knit Set on its own for a complete polished look.";
@@ -403,7 +403,7 @@ class MayaAssistant {
     this.cart.clear();
     this.renderCart();
     this.closeCartDrawer();
-    const successMessage = `Dummy payment approved. Your order total was ${this.formatCurrency(total)} and a confirmation has been prepared for hello@mayaatelier.com.`;
+    const successMessage = `Dummy payment approved. Your order total was ${this.formatCurrency(total)} and a confirmation has been prepared for hello@mayantuli.com.`;
     if (fromButton) {
       this.openChat();
       this.appendMessage({ text: successMessage, sender: "bot" });

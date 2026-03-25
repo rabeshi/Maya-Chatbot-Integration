@@ -302,7 +302,7 @@ class MayaAssistant {
     }
 
     if (normalized.includes("store") || normalized.includes("about")) {
-      return "Maya Atelier is a contemporary womenswear store focused on refined tailoring, modern essentials, and versatile accessories.";
+      return "Maya Ntuli is a contemporary womenswear store focused on refined tailoring, modern essentials, and versatile accessories.";
     }
 
     if (normalized.includes("under $200") || normalized.includes("budget") || normalized.includes("under 200")) {
@@ -511,7 +511,7 @@ class MayaAssistant {
     this.renderCart();
     this.closeCartDrawer();
 
-    const successMessage = `Dummy payment approved. Your order total was ${this.formatCurrency(total)} and a confirmation has been prepared for hello@mayaatelier.com.`;
+    const successMessage = `Dummy payment approved. Your order total was ${this.formatCurrency(total)} and a confirmation has been prepared for hello@mayantuli.com.`;
     if (fromButton) {
       this.openChat();
       this.appendMessage({ text: successMessage, sender: "bot" });
